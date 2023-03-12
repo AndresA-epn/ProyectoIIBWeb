@@ -1,0 +1,44 @@
+<div class="container" *ngIf="helado">
+    <h2>{{titulo}}</h2>
+    <div class="message success" *ngIf="status=='success'">
+        El helado se ha guardado correctamente, puedes verlo <a [routerLink]="['/helado',idGuardado]">aquí</a>.
+    </div>
+    <div class="message failed" *ngIf="status=='failed'">
+        El helado no se ha podido guardar
+    </div>
+    <form #heladoForm="ngForm" (ngSubmit)="guardarHelado(heladoForm)">
+        <p>
+            <label for="fabricante">fabricante</label>
+            <input type="text" name="fabricante" #fabricante="ngModel" [(ngModel)]="helado.fabricante" required>
+            <span *ngIf="fabricante.touched && !fabricante.valid">
+                Fabricante de helado obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" #tipo="ngModel" [(ngModel)]="helado.tipo" required>
+            <span *ngIf="tipo.touched && !tipo.valid">
+                Tipo de helado obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="sabor">Sabor</label>
+            <input type="text" name="sabor" #sabor="ngModel" [(ngModel)]="helado.sabor" required>
+            <span *ngIf="sabor.touched && !sabor.valid">
+                Sabor de helado obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="precio">Precio</label>
+            <input type="text" name="precio" #precio="ngModel" [(ngModel)]="helado.precio" required>
+        </p>
+        <p>
+            <label for="imagen">Imagen</label>
+            <span *ngIf="helado.imagen" style="float: none;">
+                <img src="{{url+'get-imagen/'+helado.imagen}}" style="width: 100px;">
+            </span>
+            <input type="file" #archivoImagen placeholder="Seleccionar imagen" (change)="imagenChangeEvent($event)">
+        </p>
+        <input type="submit" value="Guardar" [disabled]="!heladoForm.form.valid">
+    </form>
+</div>

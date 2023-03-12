@@ -1,0 +1,69 @@
+.helado{
+    width: 50px;
+}
+/*Cabecera*/
+#header{
+    width: 100%;
+    height: 70px;
+    background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "BebasNeue";
+    color: black;
+}
+#logo{
+    float: left;
+    width: 530px;
+    color: rgb(26, 155, 235);
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+/*animacion*/
+#logo:hover{
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    border: 4px solid #84b6f4;
+}
+
+#logo .helado{
+    display: block;
+    float: left;
+}
+
+#logo h3{
+    display: block;
+    float: left;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 40px;
+    transition: all 300ms;
+}
+
+#menu{
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+#menu ul li a{
+    display: block;
+    font-weight: bold;
+    color: #1370e2;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover{
+    color: #fdcae1;
+    transform: scale(1.2,1.2);
+}

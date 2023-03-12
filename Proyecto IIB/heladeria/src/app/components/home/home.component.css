@@ -1,0 +1,107 @@
+/*Estilos generales*/
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*banner*/
+#banner{
+    margin-top: 25px;
+    height: 100%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background-image: url('https://scontent.fuio5-1.fna.fbcdn.net/v/t1.6435-9/88144195_195993215076033_9079122502201901056_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGb-qigMFYNuR-5UvQF326L76gjWqNjnSnvqCNao2OdKbKL1ayv-s_F3rgyux1Mk5BXeFJ5h1zMOK0LbNiEt7EN&_nc_ohc=N4AFhZqVsq8AX-e27m6&_nc_pt=1&_nc_ht=scontent.fuio5-1.fna&oh=00_AfCmJTiWI0-0k1wJhD_VTmrajagAETzlG5qeF4PoozPxnw&oe=64334425');
+    background-size: 1200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#banner h1{
+    display: block;
+    width: 850px;
+    color: white;
+    font-size: 100px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 180px auto;
+    animation: mostrarTexto 1s linear;
+}
+@keyframes mostrarTexto {
+    0%{
+        transform: translateY(-400%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-200%) scale(3,3);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-100%) scale(2,2);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+/*tarjetas*/
+.card{
+    float: left;
+    width: 225px;
+    height: 275px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #ddd;
+    background: white;
+    overflow: hidden;
+    margin: 100px;
+    margin-top: -120px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 300ms;
+}
+.card:hover{
+    background: black;
+}
+.card:last-child{
+    margin-right: 0px;
+}
+.card img{
+    width: 100%;
+    height: 75%;
+}
+
+.card .category{
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    position: relative;
+    transition: all 300ms;    
+}
+.card:hover .category{
+    color: #4baf50;
+}
+
+
+#historia{
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    border-style: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px
+}
+

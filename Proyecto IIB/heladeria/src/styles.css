@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/*Estilos generales*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.wrap{
+  width: 1250px;
+  margin: 0px auto;
+}
+.clearfix{
+  float: none;
+  clear: both;
+}
+body {
+    background-image: url("https://previews.123rf.com/images/amaomam/amaomam2009/amaomam200900035/155836904-patr%C3%B3n-repetitivo-de-fondo-transparente-de-helado-fondo-de-pantalla-lindo-fondo-transparente.jpg");
+    background-repeat: repeat-y repeat-x;
+    background-size: 10rem;
+  }

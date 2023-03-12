@@ -1,0 +1,9 @@
+<h1>Helados</h1>
+<ul>
+    <li *ngFor="let helado of helados" class="helado">
+        <a [routerLink]="['/helado',helado._id]">
+            <h3>{{helado.fabricante}} - {{helado.tipo}}</h3>
+            <img src="{{url+'get-imagen/'+helado.imagen}}" *ngIf="helado.imagen">
+        </a>
+    </li>
+</ul>

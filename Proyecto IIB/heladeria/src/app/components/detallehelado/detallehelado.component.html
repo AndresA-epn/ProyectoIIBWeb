@@ -1,0 +1,25 @@
+<div class="detalleHelado">
+    <h2>Detalle Helado</h2>
+    <div class="container" *ngIf="helado">
+        <div class="imagen" *ngIf="helado.imagen">
+            <img src="{{url+'get-imagen/'+helado.imagen}}" *ngIf="helado.imagen">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="data">
+        <h3>{{helado.fabricante}}</h3>
+        <h3>{{helado.tipo}}</h3>
+        <h3>{{helado.sabor}}</h3>
+        <h3>{{helado.precio}}</h3>
+        <p *ngIf="confirm==false">
+            <a [routerLink]="['/editar-helado',helado._id]" class="button-edit">Editar</a>
+            <a (click)="setConfirm(true)" class="button-delete">Borrar</a>
+        </p>
+
+        <p *ngIf="confirm==true">
+            <span class="confirm">Estas seguro de eliminar este helado?</span><br />
+            <a (click)="setConfirm(false)" class="button-edit">Cancelar</a>
+            <a (click)="borrarHelado(helado._id)" class="button-delete">Eliminar definitivamente</a>
+        </p>
+    </div>
+</div>

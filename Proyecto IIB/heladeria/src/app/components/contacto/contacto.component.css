@@ -1,0 +1,45 @@
+ul{
+	list-style: none;
+}
+/*Formulario*/
+#formulario{
+    background-color: #fdfd96;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+	width: 300px;
+	height: 600px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#formulario h2{
+	font-size: 30px;
+	color: orange;
+}
+
+#formulario ul{
+	color: black;
+	font-size: 25px;
+	position: relative;
+	top: 15px;
+    left: 10px;
+}
+
+#formulario ul .ingresar{
+	width: 200px;
+	height: 30px;
+	font-size: 25px;
+    border-radius: 10px;
+}
+
+#formulario ul .btn_enviar{
+	height: 30px;
+	border: 1px solid white;
+    border-radius: 10px;
+	background-color: #006699;
+	color: white;
+	font-size: 25px;
+	position: relative;
+	top: 10px;
+}

@@ -1,0 +1,25 @@
+.container{
+    color: black;
+    border-style: solid;
+    border-radius: 25px;
+    width: 35%;
+    height: 100%;
+    margin: 25px 25px 25px 25px;
+}
+.container h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+ul{
+	list-style: none;
+}
+/*Formulario*/
+.container form label{
+    font-weight: bold;
+    font-size: 25px;
+}
+.container form input{
+    font-size: 25px;
+    margin-top: 25px;
+}

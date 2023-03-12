@@ -1,0 +1,97 @@
+
+
+/*footer*/
+#footer{
+    width: 100%;
+    margin-top: -20px;
+    height: 525px;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "trebuchetMs";
+}
+#footer a{
+    text-decoration: none;
+    color: #84b6f4;
+    transition: all 300ms;
+}
+#footer h5{
+    display: block;
+    background: #2d394b;
+    height: 50px;
+    letter-spacing: 2px;
+    font-family: "bebasNeue";
+    font-size: 25px;
+    line-height: 55px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#footer h2{
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-family: "bebasNeue";
+    list-style: 55px;
+    color: #84b6f4;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transform: all 300ms;
+}
+#footer ul li a:hover{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+#footer #info a{
+    font-size: 25px;
+}
+#footer #info a:hover{
+    color: white;
+}
+#footer #info span{
+    font-size: 18px;
+    margin-left: 15px;
+}
+#footer #autor{
+    display: block;
+    text-align: center;
+    font-family: "trebuchetMs";
+    color: white;
+    font-size: 15px;
+}
+#footer #autor a:hover{
+    text-decoration: underline;
+}
